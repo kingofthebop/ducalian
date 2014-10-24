@@ -19,11 +19,8 @@
 
 
 <header>
-
-
-
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-<div class="login"> 
+<div class="login">
 		<button id='modal-launcher' class="btn btn-primary btn-login" data-toggle="modal" data-target="#login-modal">Login >></button>
 	  </div>
   <div class="container navbar-container">
