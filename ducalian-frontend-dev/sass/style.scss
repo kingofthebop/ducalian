@@ -1,0 +1,640 @@
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+@import "compass/css3";
+@import "compass/css3/columns";
+
+html {
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+.desktop {
+display: none;
+}
+
+@mixin break-before($value: auto) {
+  @include column-break(before, $value);
+}
+
+
+
+a:hover {
+text-decoration: none;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+margin-top: 40px;
+margin-bottom: 20px;
+}
+
+h1,h2,h3,h4 {
+text-transform: uppercase;
+color: #fff;
+}
+
+h1 {
+font-size: 24px;
+}
+h2 {
+font-size: 24px;
+}
+
+h2.before {@include break-before(always);}
+
+.list-inline > li {
+padding-left: 3px;
+padding-right: 3px;
+}
+
+.img-responsive {
+width: 100%;
+}
+
+.no-margin {
+margin-top: 0px;
+}
+
+.content-top {
+padding-top: 70px;
+}
+
+.navbar-container {
+margin-top: -34px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-brand {
+padding: 15px 0px 0px 15px;
+width: 100px;
+}
+
+.navbar-nav > li {
+text-transform: uppercase;
+}
+
+.login {
+width: 85px;
+margin: 0 auto;
+}
+
+.btn-login {
+width: 85px; 
+text-align: left;
+@include border-top-radius(0px);
+@include border-bottom-radius(10px);
+font-size: 12px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+outline: none;
+outline: none -webkit-focus-ring-color;
+outline-offset: -2px;
+}
+
+figure {
+display: block;
+overflow: hidden;
+}
+
+figcaption{
+font-size: 8px;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: left;
+text-transform: uppercase;
+}
+
+/*==================================================================================
+  ============================Homepage==============================================*/
+
+#home {
+margin-top: 50px;
+}
+
+.home-banner {
+position: relative;
+}
+
+.figcaption-home {
+position: absolute;
+bottom: 0%;
+left: 33.333%;
+right: 33.333%;
+}
+
+/*==================================================================================
+  ============================Company==============================================*/
+
+.company-1,.company-2,.company-3,.company-4 {
+position: relative;
+}
+
+.figcaption-company-1 {
+position: absolute;
+bottom: -15%;
+left: 50%;
+right: 16.66%;
+}
+
+.figcaption-company-2 {
+position: absolute;
+bottom: -10px;
+left: 1%;
+right: 66.66%;
+}
+
+.figcaption-company-3 {
+position: absolute;
+bottom: -10px;
+left: 1%;
+right: 66.66%;
+}
+
+.figcaption-company-4 {
+position: absolute;
+bottom: -10px;
+left: 24%;
+right: 33.66%;
+}
+
+.company-copy {
+/*padding-top: 70px;*/
+}
+
+
+
+/*===========================================================
+  ==================Blocks===================================*/
+
+.block {
+min-height: 420px;
+margin-top: 40px;
+}
+
+.block h3 {
+color: #bfbc85;
+}
+
+.block-wrapper {
+background: #7f8c8d;
+margin-top: -40px;
+padding: 10px;
+color: #fff;
+min-height: 210px;
+position: relative;
+}
+
+.block-wrapper a {
+color: #fff;
+}
+
+.block-profile {
+min-height: 500px;
+}
+
+.profile {
+min-height: 200px;
+}
+
+.profile h3 {
+margin-top: 20px;
+margin-bottom: 0px;
+}
+
+.profile h4 {
+margin-top: 0px;
+margin-bottom: 40px;
+}
+
+/*==============================================================
+  ==================News========================================*/
+
+
+.news-block h3 {
+margin-top: 20px;
+margin-bottom: 0px;
+}
+
+.news-block time {
+display: block;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+
+.news-block {
+min-height: 200px;
+}
+
+.news-block>.block-wrapper {
+margin-top: 0px;
+}
+
+.pager {
+background: #7f8c8d;
+margin-top: 40px;
+text-transform: uppercase;
+}
+
+.pager-small {
+text-align: center;
+margin-top: 0px;
+}
+
+.pager ul {
+padding-top: 10px;
+}
+
+.pager li > a {
+padding: 0px;
+color: #fff;
+}
+
+.pager li.active a {
+color: #bfbc85;
+}
+.pager .next > a {
+float: none;
+}
+
+.pager li.start a, .pager li.prev  a  {
+color: #000;
+}
+
+.news-list-banner {
+position: relative;
+}
+
+.figcaption-news {
+position: absolute;
+bottom: -10px;
+left: 1%;
+right: 33.66%;
+}
+
+
+.pager li.active.news-item > a {
+color: #000;
+}
+
+.news-heading {
+margin-top: 0px;
+}
+
+/*==============================================================
+  ==================Contact====================================*/
+#contact {
+padding-top: 40px;
+}
+.contact-details {
+text-align: center;
+padding-top: 70px;
+padding-bottom: 40px;
+}
+
+.telephone a {
+text-transform: uppercase;
+color: #000;
+}
+
+.email a {
+text-transform: uppercase;
+color: #757238;
+}
+/*==============================================================
+  ==================Portfolio====================================*/
+.portfolio {
+position: relative;
+}
+
+#portfolio figure {
+margin-top: 40px;
+}
+
+.figcaption-portfolio {
+position: absolute;
+bottom: 0px;
+left: 50%;
+right: 25%;
+}
+
+.figcaption-portfolio-list {
+position: absolute;
+bottom: 00px;
+right: 50.66%;
+left: 20%;
+}
+
+
+/*==============================================================
+  =================Footer======================================*/
+  
+footer {
+text-align: center;
+background: #37393b;
+min-height: 100px;
+padding-top: 40px;
+}
+  
+.copyright {
+color: #fff;
+font-size: 10px;
+}
+
+.copyright p {
+margin-top: 5px;
+}
+
+.legal a {
+color: #fff;
+font-size: 10px;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+	
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	
+figcaption{
+font-size: 10px;
+}
+
+.figcaption-company-1 {
+bottom: 0%;
+}
+
+.figcaption-company-2 {
+bottom: 15px;
+}
+
+.figcaption-company-3 {
+bottom: 15px;
+}	
+
+.figcaption-company-4 {
+position: absolute;
+bottom: 0px;
+left: 24%;
+right: 43.66%;
+}
+
+.figcaption-news {
+bottom: 0px;
+right: 66.66%;
+}
+
+.figcaption-portfolio {
+bottom: 10px;
+}
+
+
+}
+
+	
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+.mobile {
+display: none;
+}
+
+.desktop {
+display: block;
+}
+
+.login {
+width: 120px;
+}
+
+.btn-login {
+width: 120px; 
+}
+
+.navbar-container {
+margin-top: -20px;
+}
+
+.navbar-brand {
+padding: 5px 0px 0px 15px;
+width: 140px;
+}
+
+
+.nav > li > a {
+padding: 10px 5px;
+}
+	
+figcaption{
+font-size: 14px;
+}
+
+
+/*Sharing*/
+#sharing {
+margin-top: -20px;
+}
+
+.sharing-header-left {
+background-color:$body-bg;
+@include border-top-right-radius(25px);
+min-height: 20px;
+}
+
+.sharing-header-right {
+background-color:$body-bg;
+@include border-top-left-radius(25px);
+min-height: 20px;
+}
+
+.two-column {
+@include column-count(2);
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.news-content {
+margin-top: 0px;
+}
+
+
+.figcaption-company-2 {
+bottom: 40px;
+}
+
+.figcaption-company-3 {
+bottom: 40px;
+}	
+
+.figcaption-company-4 {
+left: 20%;
+right: 46%;
+bottom: 35px;
+}
+
+.figcaption-news {
+bottom: 40px;
+right: 66.66%;
+}
+
+.figcaption-portfolio {
+bottom: 85px;
+}
+
+footer {
+text-align: left;
+}
+
+
+}
+
+	
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+.navbar-brand {
+padding: 0px 0px 0px 15px;
+width: 220px;
+}
+	
+figcaption{
+font-size: 18px;
+}
+.login {
+width: 180px;
+}
+
+.btn-login {
+width: 180px; 
+font-size: 14px;
+}
+
+.figcaption-company-1 {
+right: 25%;
+}
+
+.figcaption-company-2 {
+bottom: 80px;
+}
+
+.figcaption-company-3 {
+bottom: 80px;
+}	
+
+.figcaption-company-4 {
+left: 26%;
+right: 46%;
+bottom: 40px;
+}
+
+.figcaption-news {
+bottom: 40px;
+right: 66.66%;
+}
+
+.figcaption-portfolio {
+bottom: 125px;
+}
+
+.figcaption-portfolio-list {
+bottom: 50px;
+}
+
+.pager-small {
+font-size: 12px;
+}
+
+.legal {
+float: right;
+}
+
+
+}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px) {
+	
+	figcaption{
+font-size: 20px;
+}
+
+.figcaption-company-1 {
+right: 33%;
+}
+
+.figcaption-company-2 {
+bottom: 140px;
+}
+
+.figcaption-company-3 {
+bottom: 140px;
+}
+
+.figcaption-company-4 {
+left: 22%;
+right: 52%;
+bottom: 65px;
+}
+
+.figcaption-news {
+bottom: 50px;
+right: 66.66%;
+}
+
+.figcaption-portfolio {
+bottom: 155px;
+}
+
+.pager-small {
+font-size: 14px;
+}	
+
+}
+	
+/*Modal Login*/
+.login_modal_footer{margin-top:5px;}
+.login_modal_header .modal-title {text-align: center;font-family:'Philosopher',sans-serif; }
+.form-group{position: relative;}
+.form-group .login-field-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    transition: all 0.25s ease 0s;
+    padding-top: 2%;
+}
+.login-modal{
+    width:100%;
+    padding-bottom:20px;
+}
+.login_modal_header, .login_modal_footer {background: #545c5d !important;color:#fff;}
+.modal-register-btn {
+margin: 4% auto;
+width: 100%;
+text-align: center;
+}
+.login-modal input{height:40px; box-shadow: none; border:1px solid #ddd;}
+.modal-body-left{float:left; width:50%; padding-right:4%; border-right:4px solid #ddd;}
+.modal-body-right{float:right; width:47%;}
+.login-link{
+display: block;
+text-align: center;
+}
+
+
+.modal-login-btn{width:100%;height:40px; margin-bottom:10px;}
+#modal-launcher{margin: 0; }
+
+
